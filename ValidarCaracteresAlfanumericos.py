@@ -1,9 +1,9 @@
-def validarAlfanumericamente(nombreUsuario):
-
+def validar_alfanumericamente(cadena_texto):
+    
     """
-    Evalua cada elemento de la lista, si en la lista se encuentra algun caracter
+    Evalua cada letra de la cadena de texto, si en esta se encuentra algun caracter
     que no sea una letra o un numero, retorna 'False', en caso contrario retorna
-    True.
+    'True'.
     """
 
     caracteres_validos = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d",
@@ -12,17 +12,14 @@ def validarAlfanumericamente(nombreUsuario):
     "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
     "U", "V", "W", "X", "Y", "Z"]
 
-    valorARetornar = False
+    valor_a_retornar = False
 
-    for n in nombreUsuario:
+    for letra in cadena_texto:
 
-        if n in caracteres_validos:
-
-            valorARetornar = True
-
+        if letra in caracteres_validos:
+            valor_a_retornar = True
         else:
-
-            valorARetornar = False
+            valor_a_retornar = False
             break
 
-    return valorARetornar
+    return valor_a_retornar
